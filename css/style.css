@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  text-align: center;
+  background-color: tomato;
+  font-size: 16px;
+}
+
+/* ヘッダー */
+h1 {
+  font-family: "Nikukyu";
+  font-size: 60px;
+  transform: rotate(0deg);
+  animation-duration: 2s;
+  animation-name: yurayura;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  pointer-events: none;
+}
+
+@keyframes yurayura {
+  from {
+    transform: rotate(4deg);
+  }
+
+  to {
+    transform: rotate(-4deg);
+  }
+}
+
+.header p {
+  font-size: 12px;
+}
+
+/* フォーム */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+}
+
+.total-money {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 10px;
+  font-size: bold;
+}
+#total-money-form {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 10px;
+  max-width: 100px;
+  justify-self: right;
+}
+
+.yen {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 10px;
+  align-items: baseline;
+  text-align: left;
+  line-height: 40px;
+}
+.total-people {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 10px;
+}
+
+#total-people-form {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin: 10px;
+  max-width: 100px;
+  justify-self: right;
+}
+
+.nin {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: 10px;
+  text-align: left;
+  line-height: 40px;
+}
+
+/* 本日のワリカン金額フォーム */
+.total-money {
+  font-size: 24px;
+  font-style: bold;
+}
+
+.total-people {
+  font-size: 24px;
+  font-style: bold;
+}
+
+input[type="tel"],
+textarea {
+  outline: none;
+  border: none;
+  height: 36px;
+  font-size: 32px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/*ワリカン ボタン */
+#warikan-btn {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #fff;
+  background: black;
+
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+
+  height: 30px;
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+#clear-btn{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: black;
+  background: white;
+
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+  
+  height: 30px;
+  font-size: 30px;
+  cursor: pointer;
+
+  
+}
+
+/* 結果 */
+
+.section-warikan {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40px;
+}
+
+
+.warikan-moji {
+  font-size:20px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: left;
+}
+
+#result-warikan{
+font-size:40px;
+line-height: 40px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: right;
+}
+
+.warikan-desu{
+  font-size:20px;
+  line-height: 40px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
+
+}
+
+.section-hasuu {
+  width: 250px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40px;
+}
+
+.hasuu-moji{
+  font-size:20px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+#result-hasuu{
+  font-size:40px;
+  line-height: 40px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: right;
+}
+
+.hasuu-desu{
+  font-size:20px;
+  line-height: 40px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
+}
+
+.result {
+  font-size: 32px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.bye-result{
+  display:none;
+}
+
+/* 全体調整 */
+.conteiner01 {
+  vertical-align: center;
+}
+.my-prof{
+  margin-top:25px;
+}
+.my-prof >a{
+  font-size:20px;
+  text-decoration: none;
+  border:2px solid black;
+  padding:3px;
+  
+}
+.my-prof >a:hover{
+  font-size:20px;
+  color: white;
+}
+.my-prof >a:visited{
+  font-size:20px;
+  color: black;
+}
+.my-prof >a:active{
+  font-size:20px;
+  color: gray;
+}
+.my-prof>div{
+  margin-top: 20px;
+  font-size:10px;
+}
+
+/* PC版 */
+@media screen and (min-width: 960px) {
+  #total-money-form {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 10px;
+    max-width: 100px;
+    justify-self: right;
+  }
+
+  .yen {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px;
+    align-items: baseline;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  #total-people-form {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 10px;
+    max-width: 100px;
+    justify-self: right;
+  }
+
+  .nin {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 10px;
+    text-align: left;
+    line-height: 40px;
+  }
+}

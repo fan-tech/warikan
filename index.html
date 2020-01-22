@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ワリカン！</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container01">
+    <h1>ワリカン</h1>
+    <div class="header">
+      <p>あなたのワリカンを助ける、そんなwebアプリです。</p>
+    </div>
+
+    <form name="form01">
+      <div class="total-money">ワリカンしたい金額</div>
+      <input type="tel" id="total-money-form" style="text-align: right;" value="0" pattern="[0-9]"/>
+      <div class="yen">円</div>
+
+      <div class="total-people">
+        合計人数
+      </div>
+      <input type="tel" id="total-people-form" style="text-align: right;" value="2" pattern="[0-9]"/>
+      <div class="nin">人</div>
+    </form>
+
+    <div id="warikan-btn">
+      ワリカン！
+    </div>
+    <div id="clear-btn">
+      クリア！
+    </div>
+
+    <!--  -->
+    <div id="hide" class="bye-result">
+      <div class="result">
+        <div class="section-warikan">
+          <p class="warikan-moji">おひとりさま</p>
+
+          <div id="result-warikan">円</div>
+          <div class="warikan-desu">です！</div>
+        </div>
+
+        <div class="section-hasuu">
+          <p class="hasuu-moji">端数は</p>
+          <div id="result-hasuu">円</div>
+          <div class="hasuu-desu">です！</div>
+        </div>
+      </div>
+    </div>
+    <footer class="my-prof">
+      作った人：
+      <a href="https://twitter.com/fan_tech_" target="_blank">ふぁん(@fan_tech_)</a>
+      <div>クリックすると飛びます。</div>
+    </footer>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
