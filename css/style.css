@@ -29,13 +29,14 @@ h1 {
 }
 
 .header p {
-  font-size: 10px;
+  font-size: 9px;
 }
 
 /* フォーム */
 form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-rows: 40px;
 }
@@ -156,8 +157,6 @@ textarea {
   height: 22px;
   font-size: 20px;
   cursor: pointer;
-
-  
 }
 
 /* 結果 */
@@ -182,13 +181,14 @@ textarea {
 
 #result-warikan{
   
-font-size:25x;
+font-size:25px;
 line-height: 25px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   text-align: right;
+  line-height: 25px;
 }
 
 .warikan-desu{
@@ -208,7 +208,7 @@ line-height: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-rows: 40px;
+  grid-template-rows: 30px;
 }
 
 .hasuu-moji{
@@ -221,8 +221,8 @@ line-height: 25px;
 }
 
 #result-hasuu{
-  font-size:40px;
-  line-height: 40px;
+  font-size:25px;
+  line-height: 25px;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -241,7 +241,7 @@ line-height: 25px;
 }
 
 .result {
-  font-size: 32px;
+  font-size: 20px;
   width: 250px;
   margin: 0 auto;
 }
@@ -255,7 +255,7 @@ line-height: 25px;
   vertical-align: center
 }
 .my-prof{
-  margin-top:25px;
+padding-top:10px;
 }
 .my-prof >a{
   font-size:12px;
