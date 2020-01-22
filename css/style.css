@@ -38,7 +38,7 @@ form {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40px;
+  grid-template-rows: 28px;
 }
 
 .total-money {
@@ -46,7 +46,6 @@ form {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin: 10px;
   font-size: bold;
 }
 #total-money-form {
@@ -54,7 +53,7 @@ form {
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin: 10px;
+margin-top:10px;
   max-width: 100px;
   max-height:25px;
   justify-self: right;
@@ -75,7 +74,7 @@ form {
   grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin: 10px;
+ 
 }
 
 #total-people-form {
@@ -121,6 +120,10 @@ textarea {
 }
 
 /*ワリカン ボタン */
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
 #warikan-btn {
   position: relative;
   display: inline-block;
@@ -135,9 +138,9 @@ textarea {
 	    -ms-user-select: none;
 	        user-select: none;
 
-  height: 22x;
-  font-size:22px;
-  margin: 20px;
+  height: 22px;
+  font-size:16px;
+margin:10px;
   cursor: pointer;
 }
 #clear-btn{
@@ -154,8 +157,9 @@ textarea {
 	    -ms-user-select: none;
 	        user-select: none;
   
+          margin: 10px;
   height: 22px;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -166,7 +170,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-rows: 40px;
+  grid-template-rows: 30px;
 }
 
 
