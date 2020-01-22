@@ -32,7 +32,7 @@ document.getElementById("warikan-btn").addEventListener("click", function(e) {
   const totalPeopleForm = document.getElementById("total-people-form").value;
 
   const IntMoney = Number(totalMoneyForm);
-  const IntPeople = Number(totalPeopleForm );
+  const IntPeople = Number(totalPeopleForm);
 
   NaN_check1(totalMoneyForm);
   NaN_check2(totalPeopleForm);
@@ -51,10 +51,14 @@ document.getElementById("warikan-btn").addEventListener("click", function(e) {
     window.alert("「.」の含まれていない1以上の整数を入れてください。");
   } else if (totalMoneyForm === "0") {
     window.alert("「.」の含まれていない1以上の整数を入れてください。");
-  } else if (NaN_check1(totalMoneyForm) === false || NaN_check2(totalPeopleForm) === false) {
+  } else if (
+    NaN_check1(totalMoneyForm) === false ||
+    NaN_check2(totalPeopleForm) === false
+  ) {
     window.alert("1以上の半角数字を入力してください。");
-  } else if (Number.isInteger(IntMoney)  && Number.isInteger(IntPeople)){
-
+  } else if (IntMoney < IntPeople) {
+    window.alert("金額は人数より大きな数字を設定してください。");
+  } else if (Number.isInteger(IntMoney) && Number.isInteger(IntPeople)) {
     let resultHitori = 0;
     let resultNokori = 0;
 
@@ -62,7 +66,6 @@ document.getElementById("warikan-btn").addEventListener("click", function(e) {
       parseInt(totalMoneyForm) / parseInt(totalPeopleForm)
     );
 
-    
     resultNokori = parseInt(totalMoneyForm) % parseInt(totalPeopleForm);
 
     hide.classList.remove("bye-result");
@@ -72,7 +75,7 @@ document.getElementById("warikan-btn").addEventListener("click", function(e) {
 
     flag = 0;
   } else {
-    window.alert('整数を入力してください。')
+    window.alert("整数を入力してください。");
   }
 });
 
