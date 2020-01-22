@@ -133,8 +133,8 @@ textarea {
 	    -ms-user-select: none;
 	        user-select: none;
 
-  height: 15px;
-  font-size:15px;
+  height: 22x;
+  font-size:22px;
   margin: 20px;
   cursor: pointer;
 }
@@ -152,8 +152,8 @@ textarea {
 	    -ms-user-select: none;
 	        user-select: none;
   
-  height: 15px;
-  font-size: 15px;
+  height: 22px;
+  font-size: 20px;
   cursor: pointer;
 
   
@@ -250,16 +250,17 @@ line-height: 40px;
 
 /* 全体調整 */
 .conteiner01 {
-  vertical-align: center;
+  vertical-align: center
 }
 .my-prof{
   margin-top:25px;
 }
 .my-prof >a{
-  font-size:20px;
+  font-size:12px;
   text-decoration: none;
   border:2px solid black;
   padding:3px;
+  
   
 }
 .my-prof >a:hover{
