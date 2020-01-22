@@ -1,5 +1,5 @@
 body {
-  margin: 50px;
+  margin: 20px;
   font-family: monospace;
   text-align: center;
   background-color: tomato;
@@ -53,9 +53,9 @@ form {
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-margin-top:10px;
+  margin-top: 10px;
   max-width: 100px;
-  max-height:25px;
+  max-height: 25px;
   justify-self: right;
 }
 
@@ -74,7 +74,6 @@ margin-top:10px;
   grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 4;
- 
 }
 
 #total-people-form {
@@ -84,7 +83,7 @@ margin-top:10px;
   grid-row-end: 5;
   margin: 10px;
   max-width: 100px;
-  max-height:25px;
+  max-height: 25px;
   justify-self: right;
 }
 
@@ -120,7 +119,7 @@ textarea {
 }
 
 /*ワリカン ボタン */
-.btn-container{
+.btn-container {
   display: flex;
   justify-content: center;
 }
@@ -134,16 +133,16 @@ textarea {
   background: black;
 
   -webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   height: 22px;
-  font-size:16px;
-margin:10px;
+  font-size: 16px;
+  margin: 10px;
   cursor: pointer;
 }
-#clear-btn{
+#clear-btn {
   position: relative;
   display: inline-block;
   font-weight: bold;
@@ -153,11 +152,11 @@ margin:10px;
   background: white;
 
   -webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-  
-          margin: 10px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  margin: 10px;
   height: 22px;
   font-size: 16px;
   cursor: pointer;
@@ -173,9 +172,8 @@ margin:10px;
   grid-template-rows: 30px;
 }
 
-
 .warikan-moji {
-  font-size:20px;
+  font-size: 16px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -183,10 +181,9 @@ margin:10px;
   text-align: left;
 }
 
-#result-warikan{
-  
-font-size:25px;
-line-height: 25px;
+#result-warikan {
+  font-size: 25px;
+  line-height: 25px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -195,15 +192,14 @@ line-height: 25px;
   line-height: 25px;
 }
 
-.warikan-desu{
-  font-size:20px;
+.warikan-desu {
+  font-size: 20px;
   line-height: 40px;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
   text-align: left;
-
 }
 
 .section-hasuu {
@@ -215,8 +211,8 @@ line-height: 25px;
   grid-template-rows: 30px;
 }
 
-.hasuu-moji{
-  font-size:20px;
+.hasuu-moji {
+  font-size: 20px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -224,18 +220,18 @@ line-height: 25px;
   text-align: center;
 }
 
-#result-hasuu{
-  font-size:25px;
+#result-hasuu {
+  font-size: 25px;
   line-height: 25px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    text-align: right;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: right;
 }
 
-.hasuu-desu{
-  font-size:20px;
+.hasuu-desu {
+  font-size: 20px;
   line-height: 40px;
   grid-column-start: 4;
   grid-column-end: 5;
@@ -250,40 +246,38 @@ line-height: 25px;
   margin: 0 auto;
 }
 
-.bye-result{
-  display:none;
+.bye-result {
+  display: none;
 }
 
 /* 全体調整 */
 .conteiner01 {
-  vertical-align: center
+  vertical-align: center;
 }
-.my-prof{
-padding-top:10px;
+.my-prof {
+  padding-top: 10px;
 }
-.my-prof >a{
-  font-size:12px;
+.my-prof > a {
+  font-size: 12px;
   text-decoration: none;
-  border:2px solid black;
-  padding:3px;
-  
-  
+  border: 2px solid black;
+  padding: 3px;
 }
-.my-prof >a:hover{
-  font-size:20px;
+.my-prof > a:hover {
+  font-size: 20px;
   color: white;
 }
-.my-prof >a:visited{
-  font-size:20px;
+.my-prof > a:visited {
+  font-size: 20px;
   color: black;
 }
-.my-prof >a:active{
-  font-size:20px;
+.my-prof > a:active {
+  font-size: 20px;
   color: gray;
 }
-.my-prof>div{
+.my-prof > div {
   margin-top: 20px;
-  font-size:10px;
+  font-size: 10px;
 }
 
 /* PC版 */
