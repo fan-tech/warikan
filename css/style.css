@@ -29,14 +29,13 @@ h1 {
 }
 
 .header p {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* フォーム */
 form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-rows: 40px;
 }
@@ -56,6 +55,7 @@ form {
   grid-row-end: 3;
   margin: 10px;
   max-width: 100px;
+  max-height:25px;
   justify-self: right;
 }
 
@@ -84,6 +84,7 @@ form {
   grid-row-end: 5;
   margin: 10px;
   max-width: 100px;
+  max-height:25px;
   justify-self: right;
 }
 
@@ -113,7 +114,7 @@ textarea {
   outline: none;
   border: none;
   height: 36px;
-  font-size: 32px;
+  font-size: 20px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -180,8 +181,9 @@ textarea {
 }
 
 #result-warikan{
-font-size:40px;
-line-height: 40px;
+  
+font-size:25x;
+line-height: 25px;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
